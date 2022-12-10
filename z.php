@@ -12,12 +12,21 @@ require_once '/var/www/html/vendor/autoload.php';
 
 $x = $_POST["x"];
 
+
+
+
+
+
+
+
+
 // Create connection
-$conn = mysqli_connect("10.0.0.71", "testuser", "testpass", "data");
+$conn = mysqli_connect($IP, "testuser", "testpass", "data");
 
 if (!$conn) {
   die("Connection failed: " . mysqli_connect_error());
 }
+
 
 
 $sql = "INSERT INTO data.Number (phoneNum)
@@ -30,10 +39,6 @@ if ($conn->query($sql) === TRUE) {
 }
 
 $conn->close();
-
-
-
-
 
 
 $sid = "AC88455ae15ef68ccb9c6269800700191c";
@@ -49,5 +54,8 @@ $call = $twilio->calls
                );
 
 print($call->sid);
+
+
+
 
 
